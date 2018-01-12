@@ -1,0 +1,386 @@
+
+$peacream: #fafff2
+$greytext: #6d6c6c
+
+html, body
+  height: 100%
+  box-sizing: border-box
+
+*, *:before, *:after
+  box-sizing: inherit
+
+img 
+  background: transparentize($peacream, .2)
+  box-shadow: 0 0 10px 5px transparentize($peacream, .2)
+  -moz-box-shadow: 0 0 10px 5px transparentize($peacream, .2)
+  -webkit-box-shadow: 0 0 10px 5px transparentize($peacream, .2)
+      
+p
+  margin: 0
+  font-family: 'Arimo', sans-serif
+  color: $greytext
+  line-height: 140%
+  text-align: left 
+  
+h1, h2, h3
+  margin: 0 
+  text-align: center
+  font-family: 'Arima Madurai', cursive;
+  color: grey
+      
+header
+  width: 100%
+  height: 70px
+  z-index: 1000
+  position: fixed 
+  text-align: center
+  background-image: url(../img/liz.png)  
+  background-repeat: no-repeat
+  background-position: 62% -2px
+  background-size: 150px
+  background-color: transparentize($peacream, .2)
+  box-shadow: 0 0 10px 5px transparentize($peacream, .2)
+  -moz-box-shadow: 0 0 10px 5px transparentize($peacream, .2)
+  -webkit-box-shadow: 0 0 10px 5px transparentize($peacream, .2)
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.16)
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.16)
+  -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.16) 
+
+/* start header dropdown */
+#sections-btn_holder
+  display: inline-block
+  margin-top: 15px
+  width: 468px
+  height: 40px  
+  -webkit-border-radius: 8px
+  -moz-border-radius: 8px
+  border-radius: 24px
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #FFF
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #FFF
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #FFF
+  text-shadow: 1px 1px 0 white
+
+
+#sections_panel, #sections_panel2
+  position: absolute
+  height: 0px
+  width: 800px
+  top: 70px
+  left: 0px
+  right: 0px
+  margin: 0 auto
+  overflow: hidden
+  z-index: 10000
+
+  section
+    background-image: url(../img/bg.jpg)
+    padding: 20px
+    margin: 0
+    -webkit-box-shadow: inset 0 20px 20px -19px rgba(0,0,0,0.3), inset 0 0 5px 2px darken($peacream, 5) 
+    -moz-box-shadow: inset 0 20px 20px -19px rgba(0,0,0,0.3), inset 0 0 5px 2px darken($peacream, 5)
+    box-shadow: inset 0 20px 20px -19px rgba(0,0,0,0.3), inset 0 0 5px 2px darken($peacream, 5) 
+
+    img
+      cursor: pointer
+      border-radius: 50%
+      width: 150px
+      margin-bottom: 10px
+      padding: 10px
+      
+    a
+      text-decoration: none
+      color: darkgreen
+      font-size: 110%
+      text-transform: uppercase
+      font-family: 'Arima Madurai', cursive;
+
+    ul
+      margin-left: -24px 
+
+    li
+      color: darkgreen
+      
+#sections_panel2  
+  
+  section
+    background-image: url(../img/bg2.jpg)
+    padding: 20px 
+    margin: 0
+
+    img 
+      width: 200px 
+      padding: 0px
+      border-radius: 0
+
+    p 
+      text-align: center 
+      color: lightgrey 
+      text-transform: uppercase
+            
+.btn, .btn2, #input-submit
+  position: relative
+  cursor: pointer
+  background-color: #eef2e8
+  text-decoration: none 
+  top: 10.5px
+  padding: 5px 8px
+  font-family: 'Arima Madurai', cursive;
+  font-size: 107% 
+  text-transform: uppercase
+  color: green
+  -moz-border-radius: 24px
+  border-radius: 24px
+  -webkit-transition: all 300ms ease
+  -moz-transition: all 300ms ease
+  -o-transition: all 300ms ease
+  transition: all 300ms ease
+  margin: -2px
+  background-image: -webkit-gradient(radial, 50% 0, 100, 50% 0, 0, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.7))), url(../img/noisegreen.png)
+  background-image: -moz-radial-gradient(top, ellipse cover, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%), url(../img/noisegreen.png)
+  background-image: gradient(radial, 50% 0, 100, 50% 0, 0, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.7))), url(../img/noisegreen.png)
+  /* no select */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+
+  &:hover
+    text-shadow: rgba(255, 255, 255, 0.5) 0 0 10px
+    color: #fff    
+    background-image: -webkit-gradient(radial, 50% 0, 100, 50% 0, 0, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.7))), url(../img/noisegreen.png)
+    background-image: -moz-radial-gradient(top, ellipse cover, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%), url(../img/noisegreen.png)
+    background-image: gradient(radial, 50% 0, 100, 50% 0, 0, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.7))), url(../img/noisegreen.png)
+    box-shadow: 0 0 10px 5px transparentize($peacream, .2)
+    -moz-box-shadow: 0 0 10px 5px transparentize($peacream, .2)
+    -webkit-box-shadow: 0 0 10px 5px transparentize($peacream, .2)
+
+  span 
+   vertical-align: -2px     
+
+.btn2 /* last button fix gap */ 
+  margin-left: -2px 
+/* end header dropdown */
+
+/* main content */
+#wrapper 
+  padding-bottom: 70px 
+  min-height: 100%
+  position: relative
+  width: 100%
+
+
+#inner-wrapper 
+  max-width: 1200px
+  width: 100%
+  margin: 0 auto 
+  padding: 110px 40px 40px 40px
+
+  /* clearfix */
+  &:after 
+    content: ""
+    display: table
+    clear: both
+
+  .logo 
+    position: absolute
+    box-shadow: none
+    background: none
+    top: 0
+    z-index: 1000
+    opacity: .3
+
+#aboutwrap /* about page content wrap */
+  width: 100%
+  max-width: 600px
+  margin: 0 auto
+  padding: 40px
+  background-color: transparentize($peacream, .2)
+  box-shadow: 0 0 10px 5px transparentize($peacream, .2)
+  -moz-box-shadow: 0 0 10px 5px transparentize($peacream, .2)
+  -webkit-box-shadow: 0 0 10px 5px transparentize($peacream, .2)
+
+  h3
+    text-align: left
+
+  ul 
+    margin: 0
+    
+  li       
+    color: darkgreen
+    margin-left: -25px 
+      
+article 
+  width: 68% 
+  float: left
+  padding: 40px
+  background: transparentize($peacream, .2)
+  box-shadow: 0 0 10px 5px transparentize($peacream, .2)
+  -moz-box-shadow: 0 0 10px 5px transparentize($peacream, .2)
+  -webkit-box-shadow: 0 0 10px 5px transparentize($peacream, .2)
+     
+  img    
+    width: 60%
+    display: block
+    margin: auto
+        
+aside
+  float: left
+  width: 27.9%
+  margin-left: 40px
+  padding: 40px
+  background: transparentize($peacream, .2)
+  box-shadow: 0 0 10px 5px transparentize($peacream, .2)
+  -moz-box-shadow: 0 0 10px 5px transparentize($peacream, .2)
+  -webkit-box-shadow: 0 0 10px 5px transparentize($peacream, .2)
+
+  img     
+    width: 100%
+    
+footer  
+  width: 100%
+  height: 70px
+  position: absolute  
+  bottom: 0
+  background: transparentize($peacream, .2)
+  -webkit-box-shadow: 0px -6px 3px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px -6px 3px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px -6px 3px rgba(0, 0, 0, 0.16);
+
+  span /* copyright */ 
+    color: transparentize($greytext, .7)
+    font-family: 'Arimo', sans-serif 
+    position: absolute
+    bottom: 3px
+    right: 5px
+    font-size: 80%  
+
+form 
+  width: 100% 
+  max-width: 600px
+  margin: 0 auto
+  padding: 20px 20px 40px 20px 
+  background: transparentize($peacream, .2)
+  box-shadow: 0 0 10px 5px transparentize($peacream, .2)
+  -moz-box-shadow: 0 0 10px 5px transparentize($peacream, .2)
+  -webkit-box-shadow: 0 0 10px 5px transparentize($peacream, .2)
+
+  h1
+    text-align: center
+    color: darkgreen
+    text-shadow: 1px 1px 0 white
+    font-family: 'Arima Madurai', cursive
+
+  input, textarea
+    border: 0
+    outline: 0
+    padding: 12px
+    color: $greytext
+    display: block
+    width: 100%
+    margin-top: 16px
+    -moz-border-radius: 8px
+    -webkit-border-radius: 8px
+    border-radius: 8px
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1)
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1)
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1)
+    resize: none 
+
+  input:focus, textarea:focus
+    -moz-box-shadow: 0 0px 2px darkgreen !important
+    -webkit-box-shadow: 0 0px 2px darkgreen !important
+    box-shadow: 0 0px 2px darkgreen !important
+
+  #input-submit
+    padding: 8px 8px 4px 8px 
+    
+    &:hover
+      color: darkgreen
+      box-shadow: inherit
+              
+  textarea
+    height: 126px
+
+.half
+  float: left
+  width: 48%
+  margin-bottom: 1em
+
+.right
+  width: 50%
+
+.left
+  margin-right: 2%
+
+/* media queries */
+@media screen and (max-width: 1080px)
+  .logo
+    display: none
+
+  #inner-wrapper, #aboutwrap 
+    padding: 40px
+
+  header
+    position: initial
+     
+  aside
+    width: 100%
+    margin: 40px 0 0 0
+
+  article, #sections_panel, #sections_panel2
+    width: 100%
+
+@media screen and (max-width: 548px)
+
+  #inner-wrapper, #aboutwrap 
+    padding: 20px 
+        
+  aside
+    margin: 20px 0 0 0
+    padding: 20px
+
+  article
+    padding: 20px     
+ 
+  /* start dropdown */
+  #sections-btn_holder
+    width: 296px
+
+  #sections_panel
+
+    section
+
+    img
+      width: 130px    
+
+  .btn, .btn2
+    padding: 9px 0
+    font-size: 78%
+    top: 9px
+  /* end dropdown */
+
+  /* start contact form */
+  .half 
+    width: 100%
+    float: none
+    margin-bottom: 0
+
+    &:before /* clearfix */
+      content: ""
+      display: table
+      clear: both
+
+    &:after /* clearfix */
+      content: ""
+      display: table
+      clear: both
+    /* end contact form */
+
+
+
+
+
+  
+  

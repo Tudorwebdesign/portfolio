@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amazon rainforest</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+  <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.7/release/featherlight.min.css" type="text/css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+
+<header>
+  <!-- dropdown -->
+  <nav id="sections-btn_holder">  
+    <a class="btn" onclick="toggleNavPanel('sections_panel')"><span>Species &#9013;</span></a>
+      <div id="sections_panel">
+          <section>
+            <p>The Amazon contains millions of species, most of them still undescribed, and some of the world's most unusual wildlife. It is one of Earth's last refuges for jaguars, harpy eagles and pink dolphins, and home to thousands of birds and butterflies. Tree-dwelling species include southern two-toed sloths, pygmy marmosets, saddleback and emperor tamarins, and Goeldi's monkeys. The diversity of the region is staggering:</p>
+            <ul>
+            <li><p>40,000 plant species</p></li>
+            <li><p>3,000 freshwater fish species</p></li>
+            <li><p>more than 370 types of reptiles</p></li>
+          </ul>   
+          <p>To protect these species, WWF works with local communities, partner non-governmental organizations, corporations and governments to ensure that deforestation and degradation of rivers are alleviated.</p>
+          <!-- carousel -->
+          <div class="owl-carousel owl-theme">
+            <a href="http://www.nationalgeographic.com/animals/mammals/j/jaguar/" target="_blank"><img class="owl-lazy" data-src="img/Jaguar.jpg"><span>Jaguar</span></a>
+              <a href="http://www.extremescience.com/piranha.htm" target="_blank"><img class="owl-lazy" data-src="img/piranha.jpg"><span>Piranha</a>
+              <a href="http://www.rainforest-alliance.org/species/poison-dart-frog" target="_blank"><img class="owl-lazy" data-src="img/Poison_dart_frog.jpg"><span>Poison Dart Frog</span></a>
+            <a href="http://www.nationalgeographic.com/animals/mammals/group/spider-monkeys/" target="_blank"><img class="owl-lazy" data-src="img/Black_Spider_Monkey.jpg"><span>Black Spider<br>Monkey</span></a>
+            <a href="https://www.livescience.com/27612-sloths.html" target="_blank"><img class="owl-lazy" data-src="img/sloth.jpg"><span>Sloth</span></a>
+              <a href="https://www.rainforestcruises.com/jungle-blog/top-9-macaw-facts" target="_blank"><img class="owl-lazy" data-src="img/Macaw.jpg"><span>Macaw</span></a>
+              <a href="http://www.bbc.co.uk/nature/life/Amazon_river_dolphin" target="_blank"><img class="owl-lazy" data-src="img/Amazon_River_Dolphin.jpg"><span>Amazon River<br> Dolphin</span></a>
+          </div>
+        </section> 
+      </div>
+       
+    <a class="btn" onclick="toggleNavPanel('sections_panel2')"><span>Gallery &#9013;</a>
+            <div id="sections_panel2">
+          <section>
+            <!-- carousel -->
+          <div class="owl-carousel owl-theme">
+            <img class="owl-lazy" data-src="img/gal1.jpg" data-featherlight="img/gal1.jpg">
+              <img class="owl-lazy" data-src="img/gal2.jpg" data-featherlight="img/gal2.jpg">   
+            <img class="owl-lazy" data-src="img/gal4.jpg" data-featherlight="img/gal4.jpg">
+            <img class="owl-lazy" data-src="img/gal5.jpg" data-featherlight="img/gal5.jpg">
+              <img class="owl-lazy" data-src="img/gal6.jpg" data-featherlight="img/gal6.jpg">
+              <img class="owl-lazy" data-src="img/gal7.jpg" data-featherlight="img/gal7.jpg">
+              <img class="owl-lazy" data-src="img/gal8.jpg" data-featherlight="img/gal8.jpg">
+            <img class="owl-lazy" data-src="img/gal9.jpg" data-featherlight="img/gal9.jpg">
+            <img class="owl-lazy" data-src="img/gal10.jpg" data-featherlight="img/gal10.jpg">
+              <img class="owl-lazy" data-src="img/gal11.jpg" data-featherlight="img/gal11.jpg">
+              <img class="owl-lazy" data-src="img/gal12.jpg" data-featherlight="img/gal12.jpg">
+          </div>
+          <p>(touch or click for fullsize)</p>
+        </section>
+      </div>
+    <a href="about.html" class="btn"><span>About(this design)</span></a>
+    <a href="contact.html" class="btn2"><span>Contact</span></a>
+  </nav> 
+  
+  <!-- js dropdown -->
+  <script>                  
+    function toggleNavPanel (x) {
+      var panel = document.getElementById (x), height="auto";
+
+      if (panel.style.height == height) {
+        panel.style.height = "0px";
+      }
+
+      else {
+        panel.style.height = height;  
+      }
+    }
+  </script>
+</header>
+
+<div id="wrapper">
+<div id="inner-wrapper">
+  
+	<div id="aboutwrap">	
+	<p>This is one take on the many great wildlife websites out there. Text content is (copy&paste) merely for display puposes of the design.</p><br>
+
+	<h3>Layout</h3><br>
+
+	<p>Floats and positioning. Responsive down to iphone5 size. Screens wider than 1080px will display the second container as sidebar. Dynamic content ready.<br><br>
+	<b>Fonts:</b> For headings, google font 'Arima Madurai' has a slight calligraphy touch, nice on a forest theme. Paragraph google font 'Arimo' compliments well being slightly tall and informal.</p><br>
+
+	<h3>Plugins</h3><br>
+
+	<ul>
+		<li><p><b>Backstretch:</b><br>
+		Will make background images vertically responsive. As containers grow, the background image will stay in full view no matter the page size.</p></li><br>
+		<li><p><b>Owl carousel:</b><br>
+		Nice carousel plugin.</p></li><br>
+		<li><p><b>Featherlight:</b><br>
+		Fast, responsive lightbox for any content.</p></li>
+	</ul>
+	</div>
+
+
+</div>
+<footer>  
+  <span>&copy; 2017 Tudorwebdesign</span> 
+</footer>
+  
+</div> 
+
+
+<!-- js -->
+
+<!-- owl carousel -->
+<script src="js/owl.carousel.min.js"></script>
+
+<!-- featherlight -->
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.7.7/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- backstretch -->
+<script src="js/jquery.backstretch.min.js"></script>
+<script>
+  $.backstretch("img/amazon-rainforest.jpg");
+</script>
+
+</body>
+</html>
